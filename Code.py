@@ -8,6 +8,7 @@ import random
 import os
 from tkinter.ttk import *
 import tkinter as tk
+import tkinter as tkk
 import sys
 from tkinter.messagebox import showinfo
 
@@ -95,7 +96,7 @@ def countdown():
 root = tk.Tk() 
 
 # set the title 
-root.title("Color Game For Windows 1.0!")
+root.title("Color Game For Windows 2.0!")
 my_menu= Menu(root)
 root.config(menu=my_menu)
 def our_command2():
@@ -139,7 +140,7 @@ root.geometry("820x690")
 #Cant maximise the software!
 root.resizable(0,0)
 style = Style()
-Help = tkinter.Label(root, text = "Color Game For Windows 1.0!", font = ('Ubuntu', 24,"bold","underline")) 
+Help = tkinter.Label(root, text = "Color Game For Windows 2.0!", font = ('Ubuntu', 24,"bold","underline")) 
                 
 Help.pack() 
 # add a time left label 
@@ -203,10 +204,10 @@ def on_closing():
         root.destroy()
 
 
-Tbutton = tkinter.Button(root,text = "Restart The Game",font=("ubuntu",28),bg="pink",activebackground='#23d18b', command = restart)
+Tbutton = tkinter.Button(root,text = "Restart The Game",font=("ubuntu",23),bg="pink",activebackground='#23d18b', command = restart)
 Tbutton.pack(side=tk.LEFT)
 Tbutton.place(relx=0.5, rely=0.8, anchor=CENTER)
-qbutton = tkinter.Button(root,text = "How to play?",font=("ubuntu",28),bg="pink",activebackground='#23d18b', command = howtoplay)
+qbutton = tkinter.Button(root,text = "How to play?",font=("ubuntu",23),bg="pink",activebackground='#23d18b', command = howtoplay)
 qbutton.pack(side=tk.LEFT)
 qbutton.place(relx=0.5, rely=0.9, anchor=CENTER)
 # start the GUI 
